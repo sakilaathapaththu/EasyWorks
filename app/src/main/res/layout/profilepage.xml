@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagebackprofile"
+                    android:layout_width="414dp"
+                    android:layout_height="162dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.666"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/top_background" />
+
+
+
+                <RelativeLayout
+                    android:layout_width="410dp"
+                    android:layout_height="429dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/imagebackprofile"
+                    tools:layout_editor_absoluteX="2dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/accountsetting"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+
+                        android:background="@drawable/btn_background_1"
+                        android:drawableLeft="@drawable/profilesettingpic"
+                        android:drawablePadding="20dp"
+                        android:paddingStart="20dp"
+
+                        android:text="Account Settings"
+                        android:textAlignment="viewStart"
+                        android:textSize="14dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/notificationbutton"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/accountsetting"
+
+                        android:layout_marginTop="10dp"
+
+                        android:background="@drawable/btn_background_1"
+                        android:drawableLeft="@drawable/notificationbuttonpic"
+                        android:drawablePadding="20dp"
+                        android:paddingStart="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Notifications"
+                        android:textAlignment="viewStart"
+                        android:textSize="14dp" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/updatebutton"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/notificationbutton"
+
+                        android:layout_marginTop="10dp"
+
+                        android:background="@drawable/btn_background_1"
+                        android:drawableLeft="@drawable/updatepic"
+                        android:drawablePadding="20dp"
+                        android:paddingStart="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Update Password"
+                        android:textAlignment="viewStart"
+                        android:textSize="14dp" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/deletebutton"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/updatebutton"
+
+                        android:layout_marginTop="10dp"
+
+                        android:background="@drawable/btn_background_1"
+                        android:drawableLeft="@drawable/deletepic"
+                        android:layout_centerHorizontal="true"
+                        android:drawablePadding="20dp"
+                        android:paddingStart="20dp"
+
+                        android:text="DELETE Account"
+                        android:textAlignment="viewStart"
+                        android:textSize="14dp" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/logoutbutton"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/deletebutton"
+
+                        android:layout_marginTop="10dp"
+
+                        android:background="@drawable/btn_background_1"
+                        android:drawableLeft="@drawable/logoutpic"
+                        android:layout_centerHorizontal="true"
+                        android:drawablePadding="20dp"
+                        android:paddingStart="20dp"
+
+                        android:text="LOGOUT"
+                        android:textAlignment="viewStart"
+                        android:textSize="14dp" />
+
+
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

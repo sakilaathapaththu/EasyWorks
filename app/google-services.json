@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "296440552674",
+    "project_id": "easyworks-2e1f6",
+    "storage_bucket": "easyworks-2e1f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296440552674:android:753d3665e3e3d0624312bb",
+        "android_client_info": {
+          "package_name": "com.example.easyworks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296440552674-6q552enc995abmff6ogu4gn0c5649440.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC647cnxuLlQMs4K5nxLqnl6pisgBFqPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296440552674-6q552enc995abmff6ogu4gn0c5649440.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

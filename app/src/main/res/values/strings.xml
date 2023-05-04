@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Easy Works</string>
+    <string-array name="Type">
+        <item>Select Type</item>
+        <item>Customer</item>
+        <item>Freelancer</item>
+    </string-array>
+    <string name="dashboard1">Dashboard</string>
+</resources>

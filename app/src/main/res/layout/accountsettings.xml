@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ececec"
+    android:orientation="vertical"
+    tools:context=".activity.Accountsettings"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="417dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#02FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_home_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="334dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_stars_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="253dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#03FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="173dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_notifications_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="265dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_support_agent_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="413dp"
+        android:layout_height="650dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagebackprofile"
+                android:layout_width="414dp"
+                android:layout_height="162dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/top_background" />
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="201dp"
+                android:layout_height="114dp"
+                android:layout_marginBottom="51dp"
+                android:contentDescription="TODO"
+                app:layout_constraintBottom_toBottomOf="@+id/imagebackprofile"
+                app:layout_constraintEnd_toEndOf="@+id/imagebackprofile"
+                app:layout_constraintStart_toStartOf="@+id/imagebackprofile"
+                app:layout_constraintTop_toBottomOf="@+id/imagebackprofile"
+                app:srcCompat="@drawable/profilepic" />
+
+                <RelativeLayout
+                    android:layout_width="409dp"
+                    android:layout_height="628dp"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="3dp">
+
+                    <TextView
+                        android:id="@+id/texuid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User ID :"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+
+                        android:id="@+id/uid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/texuid"
+                        android:background="@drawable/btn_background_1"
+                        android:padding="20dp"
+                        android:text=""
+                        android:textColor="@color/black"
+
+                        android:textColorHint="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/textv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/uid"
+                        android:text="Firstname :"
+                        android:textColor="@color/black" />
+
+                    <TextView
+
+                        android:id="@+id/fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textv1"
+                        android:background="@drawable/btn_background_1"
+                        android:padding="20dp"
+                        android:text=""
+                        android:textColor="@color/black"
+
+                        android:textColorHint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fname"
+                        android:text="Lastname :"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textv2"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/btn_background_1"
+                        android:padding="20dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/textv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lname"
+                        android:text="Address :"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/address1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textv3"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/btn_background_1"
+                        android:padding="20dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/textv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/address1"
+                        android:text="Telephone Number :"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/Tele"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textv4"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/btn_background_1"
+                        android:padding="20dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/textv5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tele"
+                        android:text="Username :"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/username1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textv5"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/btn_background_1"
+                        android:padding="18dp"
+                        android:text=""
+                        android:textColor="@color/black"
+
+                        android:textColorHint="@color/black" />
+
+                    <Button
+                        android:id="@+id/updateprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username1"
+                        android:hint="UPDATE" />
+
+                    <Button
+                        android:id="@+id/deleteprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/updateprofile"
+                        android:hint="DELETE" />
+
+
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
