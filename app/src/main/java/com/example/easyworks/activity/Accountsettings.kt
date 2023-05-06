@@ -1,6 +1,5 @@
 package com.example.easyworks.activity
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -11,7 +10,6 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.easyworks.R
 import com.example.easyworks.models.Users
-import com.google.android.material.button.MaterialButton
 import com.google.firebase.database.FirebaseDatabase
 
 
@@ -101,7 +99,7 @@ class Accountsettings : AppCompatActivity() {
     ){
         val mDialog = AlertDialog.Builder(this)
         val inflater = layoutInflater
-        val mDialogView = inflater.inflate(R.layout.update_dialog,null)
+        val mDialogView = inflater.inflate(R.layout.update_dialog1,null)
 
         mDialog.setView(mDialogView)
 

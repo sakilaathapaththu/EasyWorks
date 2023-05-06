@@ -1,78 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/purple_200"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/topimg"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:layout_height="350dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:orientation="vertical"
-        >
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:background="@drawable/bottom_gradient"
+        android:layout_height="wrap_content">
 
-        <RelativeLayout
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:text="@string/gettingstart"
+            android:textColor="@color/white"
+            android:textSize="35dp"
 
-            <ImageView
-                android:id="@+id/imagebackprofile"
-                android:layout_width="match_parent"
-                android:layout_height="162dp"
-                android:scaleType="fitXY"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.666"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/top_background" />
+            android:layout_height="wrap_content"/>
 
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/gettingsubtext"
+            android:textColor="#83F1F1F1"
+            android:textSize="17dp"
+            android:layout_marginVertical="10dp"
+
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:id="@+id/getstartedbtn"
+            android:background="@drawable/btn_style"
+            android:layout_marginTop="30dp"
+            android:elevation="30dp"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
             <TextView
-                android:padding="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Are you tired of looking for a job?"
-                android:textSize="32dp"
-                android:textAlignment="center"
-                android:textColor="@color/white"/>
+                android:id="@+id/getstratbtn"
+                android:text="Get Started"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:gravity="center"
 
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <ImageView
-                android:id="@+id/dashboardpic"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_centerHorizontal="true"
-                android:src="@drawable/loginpic"/>
-        </RelativeLayout>
+                android:layout_height="wrap_content"/>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <TextView
-                android:id="@+id/joinustext1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="You have got the best way to get your job.Join us to get the best job for your abilities."
-                android:textAlignment="center"
-                android:textSize="24dp" />
-
-            <Button
-                android:id="@+id/dashjoinus"
-                android:layout_width="130dp"
-                android:layout_height="62dp"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/joinustext1"
-                android:textSize="20dp"
-                android:text="Join Us"
-                android:layout_marginTop="20dp"/>
-        </RelativeLayout>
-
+        </LinearLayout>
     </LinearLayout>
-</ScrollView>
+
+</LinearLayout>

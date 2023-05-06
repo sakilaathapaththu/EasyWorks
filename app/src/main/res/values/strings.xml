@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">Easy Works</string>
-    <string-array name="Type">
-        <item>Select Type</item>
-        <item>Customer</item>
-        <item>Freelancer</item>
-    </string-array>
-    <string name="dashboard1">Dashboard</string>
+    <string name="gettingstart">Are you tired of looking for a job?</string>
+    <string name="gettingsubtext">You have got the best way to get your job.Join us to get the best job for your abilities.</string>
+
+
+<string name="dashboard1">Dashboard</string>
 </resources>

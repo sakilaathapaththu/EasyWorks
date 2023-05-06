@@ -9,4 +9,11 @@
     <color name="white">#FFFFFFFF</color>
 
 
+    <color name = "bgcolor">#474D71</color>
+    <color name = "textcolor">#FDFCFF</color>
+    <color name = "subtextcolor">#B7EEEEEE</color>
+    <color name = "btnstart">#7B7EA4</color>
+    <color name = "btnend">#575C84</color>
+    <color name = "cardstart">#93B7D7</color>
+    <color name = "cardend">#474D71</color>
 </resources>
